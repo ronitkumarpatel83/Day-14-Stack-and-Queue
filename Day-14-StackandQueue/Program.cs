@@ -10,7 +10,6 @@ namespace Day_14_StackandQueue
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to Stack and Queue");
             Console.WriteLine("Data Structure");
             Console.WriteLine("\n1.Stack\n2.Stack Using linked List");
             Console.WriteLine("\nEnter your choice : ");
@@ -24,6 +23,9 @@ namespace Day_14_StackandQueue
                     stack.Push(56);// Calling method of Stack generic class to push 56 element in stack
                     stack.Display(); // Calling method of Stack generic class to display all element in stack
                     stack.Display(); // Calling method of Stack generic class to display all element in stack
+                    stack.Peek(); // Calling method of Stack generic class to peek top most element of stack
+                    stack.Pop(); // Calling method of Stack generic class to delete top most element of stack
+                    Console.WriteLine("\nIs stack empty :: " + stack.isEmpty());
                     break;
                 case 2:
                     stack.PushByLinkedList(70); // Calling method of Stack generic class to push 70 element in stack

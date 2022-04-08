@@ -52,5 +52,37 @@ namespace Day_14_StackandQueue
             this.top = list.top;
             Display();
         }
+        public void Peek() // Creating method to peek top of stack element
+        {
+            if (this.top == null) // Checking that top is null otherwise print top element
+            {
+                Console.WriteLine("\nNo element are present in stack to Peek");
+                return;
+            }
+            Console.WriteLine("\nTop most element of stack is : " + this.top.data);
+        }
+        public void Pop() // Creating method to pop top of stack element
+        {
+            if (this.top == null) // Checking that top is null otherwise delete top element
+            {
+                Console.WriteLine("\nNo element are present in stack to Pop");
+                return;
+            }
+            else
+            {
+                T deleteNode = this.top.data; // Storing top element
+                this.top = top.next; // Delete top element
+                Console.WriteLine($"\n{deleteNode} is deleted from stack");
+            }
+        }
+        public bool isEmpty() //Methhod to empty stack
+        {
+            while (this.top != null)  //Deleting top element untill stack is empty
+            {
+                Peek();
+                Pop();
+            }
+            return true;
+        }
     }
 }
