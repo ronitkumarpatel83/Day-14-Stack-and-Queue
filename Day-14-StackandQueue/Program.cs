@@ -39,11 +39,13 @@ namespace Day_14_StackandQueue
                     queue.Enqueue(56); // Calling method of Queue generic class to enqueue 56 element in Queue
                     queue.Enqueue(30); // Calling method of Queue generic class to enqueue 56 element in Queue
                     queue.Enqueue(70); // Calling method of Queue generic class to enqueue 56 element in Queue
-                    queue.Display(); // Calling method of Queue generic class to display all element in Queue                    
+                    queue.Display(); // Calling method of Queue generic class to display all element in Queue
+                    queue.Dequeue(); // Calling method of Queue generic class to dequeue all element in Queue
                     break;
                 default:
                     Console.WriteLine("Enter valid choice");
                     break;
+
             }
             Console.ReadLine();
         }
